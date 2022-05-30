@@ -7,7 +7,7 @@ export const styles = StyleSheet.create({
     paddingVertical: 30,
     justifyContent: 'space-between',
     height: '100%',
-    backgroundColor: "#fff",
+    backgroundColor: "white",
   },
 
   topBox: {

@@ -10,7 +10,8 @@ import SecureScreen from '../pages/onboarding/secureAccount/index';
 import ConfirmScreen from '../pages/onboarding/confirmPin/index';
 import SignInScreen from '../pages/auth/signin/index';
 import ForgotScreen from '../pages/auth/forgotPin/index';
-import DashboardScreen from '../pages/dashboard/home/index'
+import DashboardScreen from '../pages/dashboard/index'
+import RequestScreen from '../components/confirmSentFundModal/index'
 
 const Stack = createNativeStackNavigator();
 
@@ -26,6 +27,7 @@ const Navigation = () => {
         <Stack.Screen name="Login" component={SignInScreen} />
         <Stack.Screen name="Forgot" component={ForgotScreen} />
         <Stack.Screen name="Dashboard" component={DashboardScreen} />
+        <Stack.Screen name="Request" component={RequestScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );

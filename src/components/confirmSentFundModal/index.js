@@ -4,7 +4,7 @@ import React from 'react';
 import {withTheme, Button} from 'react-native-paper';
 import {styles} from './styles';
 
-const Index = ({theme}) => {
+const Index = ({theme, navigation }) => {
   const {colors} = theme;
 
   return (
@@ -20,7 +20,7 @@ const Index = ({theme}) => {
       <Button
         mode="contained"
         uppercase={false}
-        // onPress={() => console.log('Pressed')}
+        onPress={() => navigation.navigate('User')}
         style={[styles.btn, {backgroundColor: colors.disabled}]}>
         <Text style={{color: colors.text, fontWeight: '600'}}>Go To Home</Text>
       </Button>

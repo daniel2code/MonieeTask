@@ -4,7 +4,7 @@ import React from 'react';
 import {Button, withTheme} from 'react-native-paper';
 import {styles} from './styles';
 
-const Index = ({theme}) => {
+const Index = ({theme, navigation}) => {
   const {colors} = theme;
 
   return (
@@ -38,7 +38,7 @@ const Index = ({theme}) => {
         <Button
           mode="contained"
           uppercase={false}
-          // onPress={() => console.log('Pressed')}
+          onPress={() => navigation.navigate('Request')}
           style={[styles.btn, {backgroundColor: colors.disabled}]}>
           <Text style={{color: '#828282', fontWeight: '600'}}>Request</Text>
         </Button>
@@ -46,7 +46,7 @@ const Index = ({theme}) => {
         <Button
           mode="contained"
           uppercase={false}
-          // onPress={() => console.log('Pressed')}
+          onPress={() => navigation.navigate('Request')}
           style={[styles.btn, {backgroundColor: colors.disabled}]}>
           <Text style={{color: '#828282', fontWeight: '600'}}>Send</Text>
         </Button>
